@@ -7,3 +7,4 @@ CMD git clone https://github.com/louislam/uptime-kuma.git
 CMD cp -R uptime-kuma/ .
 CMD npm run setup
 CMD pm2 start server/server.js --name uptime-kuma -- --port="${port}" --host=0.0.0.0
+CMD pm2 save
