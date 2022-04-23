@@ -4,3 +4,4 @@ CMD npm install pm2 -g
 CMD pm2 install pm2-logrotate
 CMD git clone https://github.com/louislam/uptime-kuma.git
 CMD cd uptime-kuma/
+CMD ls -lia
