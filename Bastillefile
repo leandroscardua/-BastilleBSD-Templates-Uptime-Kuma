@@ -1,5 +1,4 @@
 ARG port=80
-ARG version=latest
 PKG npm-node14 git-lite
 CMD npm install pm2 -g
 CMD pm2 install pm2-logrotate
