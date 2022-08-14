@@ -3,7 +3,7 @@ PKG npm-node14 git-lite
 CMD npm install pm2 -g
 CMD pm2 install pm2-logrotate
 CMD pm2 startup
-CMD git clone https://github.com/louislam/uptime-kuma.git
+CMD git clone -b 1.17.1 https://github.com/louislam/uptime-kuma.git
 CMD cp -R uptime-kuma/ .
 CMD npm run setup
 CMD pm2 start server/server.js --name uptime-kuma -- --port="${port}" --host=0.0.0.0
